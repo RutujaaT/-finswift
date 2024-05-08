@@ -1,0 +1,1045 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+/* .dosis-<uniquifier> {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+/* .header-navbar-sect {
+    height: 115px;
+} */
+
+.header-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px lightgray;
+    height: 90px;
+}
+
+.logo {
+    height: auto;
+    width: 100px;
+}
+
+.nav li a {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(84, 84, 84);
+}
+
+.hero-section {
+
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.bg-hero {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.hero-section {
+    z-index: 1;
+    height: 730px;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .4;
+    z-index: 2;
+}
+
+/* #video-bg {
+    width: 100% !important;
+    height: auto !important;
+} */
+
+.bg-content {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-319px, -54px);
+    z-index: 9;
+    color: white;
+    text-align: center;
+}
+
+.hero-heading h2 {
+    font-size: 42px;
+}
+
+.hero-heading h1 {
+    font-size: 68px;
+    line-height: 42px;
+}
+
+.hero-heading {
+    padding-bottom: 20px;
+
+}
+
+.bg-content p {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.highlights-section {
+    background-color: #f5f5f2;
+    position: relative;
+    z-index: 1;
+}
+
+.highlights {
+    /* gap: 10px; */
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.highlights-card {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.highlights-card i {
+    font-size: 30px;
+    background-color: #2868D8;
+    color: white;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.fa-award {
+    padding: 18px 23px;
+}
+
+.fa-users {
+    padding: 20px 17px;
+}
+
+.fa-indian-rupee-sign {
+    padding: 17px 25px;
+}
+
+.fa-chart-line {
+    padding: 17px 18px;
+}
+
+.highlights-card p {
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+}
+
+.about-us {
+    padding: 115px 0 0 0;
+}
+
+.about-us-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.vision,
+.mission {
+    border: 1px solid lightgray;
+    width: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 17px lightgray;
+
+
+}
+
+.vision h5,
+.mission h5 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vision p,
+.mission p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: "Dosis", sans-serif;
+    text-transform: capitalize;
+}
+
+.fa-eye {
+    color: rgb(19 206 173);
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.fa-rocket {
+    color: rgb(61 58 177);
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.stock-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.row {
+    margin-top: 80px;
+}
+
+.about-us-content h4 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 0 0 10px 20px !important;
+}
+
+.about-us-content p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0 0 10px 20px !important;
+}
+
+
+/* SERVICES */
+
+.services {
+    padding: 115px 80px 80px;
+}
+
+.services-heading {
+    margin-bottom: 30px;
+}
+
+.services-heading h3 {
+    text-align: center;
+}
+
+.card {
+    width: 461px !important;
+    padding: 10px;
+    background: #e4dbdb3d;
+    /* filter: blur(0px); */
+    box-shadow: 0 0 5px lightgray;
+}
+
+.about-us-card {
+    height: 469px;
+
+}
+
+.card-image {
+    background-color: lightgray !important;
+    width: 150px !important;
+    height: 200px !important;
+    transform: translate(-62px, 10px);
+
+}
+
+
+
+
+
+/* WHY CHOOSE US  */
+
+/* .why-choose-us {
+    padding: 0 0 80px;
+}  */
+
+.why-choose-us-heading {
+    margin-bottom: 30px;
+}
+
+.why-choose-us-heading h3 {
+    text-align: center;
+}
+
+.why-choose-us-content ul {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.why-choose-us-content li {
+    font-size: 18px;
+    padding: 5px 2px;
+
+}
+
+.why-choose-us-content li span {
+    padding-right: 5px;
+
+}
+
+.why-choose-us-content ul li img {
+    height: auto;
+    width: 20px;
+    /* position: relative;
+    left: -10px; */
+    transform: translate(-10px, 0px);
+
+}
+
+.visionary-main {
+    padding: 80px 35px;
+}
+
+.visionary-cards {
+    margin-bottom: 30px;
+}
+
+.visionaries {
+    margin-bottom: 30px;
+}
+
+.visionaries h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.visionaries p {
+    padding: 23px 82px;
+    letter-spacing: 1px;
+}
+
+/* .shared-vision h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shared-vision p {
+    letter-spacing: 1px;
+} */
+
+
+.shared-vision {
+    margin-top: 50px;
+    letter-spacing: 1px;
+    font-family: "Dosis", sans-serif;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+    background-color: #13cead;
+    box-shadow: 20px 20px #3d3ab1;
+    padding: 20px;
+    color: white;
+
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    padding: 100px 80px 0;
+}
+
+.testimonials-heading {
+    margin-bottom: 30px;
+}
+
+
+.testimonials-heading h3 {
+    text-align: center;
+}
+
+.swiper-box {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    flex-direction: column;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.test {
+    font-weight: 600;
+}
+
+.swiper-slide h5 {
+    padding: 10px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.swiper-slide p {
+    text-align: left;
+}
+
+.swiper-button-prev {
+    color: lightgray;
+    left: -50px !important;
+    z-index: 99;
+}
+
+.swiper-button-next {
+    color: lightgray;
+    right: -50px !important;
+    z-index: 99;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 25px !important;
+}
+
+
+/* scroll logos */
+
+.logos {
+    padding: 80px 0;
+}
+
+
+.logo-scroll {
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+
+
+
+/* contact us */
+
+.contact-us-heading {
+    margin-bottom: 20px;
+}
+
+.contact-us-heading h3 {
+    text-align: center;
+}
+
+.contact-us {
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+
+.map-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+.footer-info {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3d3ab1;
+    color: white;
+}
+
+
+/* footer {
+    height: 200px;
+    width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .header-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        box-shadow: 0 0 10px lightgray;
+        height: 90px;
+    }
+
+    .logo {
+        height: auto;
+        width: 80px;
+    }
+
+    .nav li a {
+        font-family: "Dosis", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: rgb(84, 84, 84);
+    }
+
+    .hero-section {
+
+        width: 100%;
+
+        position: relative;
+        z-index: 1;
+        height: 300px;
+    }
+
+    .bg-hero {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+    }
+
+
+
+
+    .hero-section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: .4;
+        z-index: 2;
+    }
+
+    /* #video-bg {
+        width: 100% !important;
+        height: auto !important;
+    } */
+
+    .bg-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translate(0, -43px);
+        z-index: 9;
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-heading h2 {
+        font-size: 24px;
+    }
+
+    .hero-heading h1 {
+        font-size: 40px;
+        line-height: 16px;
+    }
+
+    .hero-heading {
+        padding-bottom: 20px;
+
+    }
+
+    .bg-content p {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .highlights-section {
+        background-color: #f5f5f2;
+        position: relative;
+        z-index: 1;
+    }
+
+    .highlights {
+        /* gap: 10px; */
+        justify-content: space-around;
+        padding: 25px 0;
+    }
+
+    .highlights-card {
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 50%;
+    }
+
+    .highlights-card i {
+        font-size: 30px;
+        background-color: #fafafa00;
+        color: rgb(45, 99, 225);
+        border-radius: 100%;
+        margin-bottom: 20px;
+    }
+
+    .fa-award {
+        padding: 0;
+    }
+
+    .fa-users {
+        padding: 0;
+    }
+
+    .fa-indian-rupee-sign {
+        padding: 0;
+    }
+
+    .fa-chart-line {
+        padding: 0;
+    }
+
+    .highlights-card p {
+        font-weight: 600;
+        font-family: "Dosis", sans-serif;
+    }
+
+    .about-us {
+        padding: 34px 0 0 0;
+    }
+
+    .about-us-heading {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .vision,
+    .mission {
+        border: 1px solid lightgray;
+        width: 450px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 17px lightgray;
+
+
+    }
+
+    .vision h5,
+    .mission h5 {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .gap {
+        gap: 1rem !important;
+    }
+
+    .vision p,
+    .mission p {
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        font-family: "Dosis", sans-serif;
+        text-transform: capitalize;
+    }
+
+    .fa-eye {
+        color: rgb(19 206 173);
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .fa-rocket {
+        color: rgb(61 58 177);
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .stock-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+
+    .about-img-one {
+        display: none;
+    }
+
+    .row {
+        margin-top: 80px;
+    }
+
+    .about-us-content h4 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 0 0 0px 0 !important;
+        margin-top: 24px;
+    }
+
+    .about-us-content p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 0 0 0 0px !important;
+    }
+
+
+    /* SERVICES */
+
+    .services {
+        padding: 34px 0 0;
+    }
+
+    .services-heading {
+        margin-bottom: 30px;
+    }
+
+    .services-heading h3 {
+        text-align: center;
+    }
+
+    .card {
+        width: 100% !important;
+        padding: 10px;
+        background: #e4dbdb3d;
+        /* filter: blur(0px); */
+        box-shadow: 0 0 5px lightgray;
+    }
+
+    .about-us-card {
+        height: 517px;
+
+    }
+
+    .card-image {
+        background-color: lightgray !important;
+        width: 150px !important;
+        height: 200px !important;
+        transform: translate(0px, 0px);
+
+    }
+
+    .card-name {
+        text-align: center;
+
+    }
+
+    .card-text {
+        font-size: 14px !important;
+    }
+
+
+
+    /* WHY CHOOSE US  */
+
+    .why-choose-us {
+        padding: 20px 0;
+    }
+
+    .why-choose-us-heading {
+        margin-bottom: 30px;
+    }
+
+    .why-choose-us-heading h3 {
+        text-align: center;
+    }
+
+    .why-choose-us-content ul {
+        list-style-type: none;
+        list-style-position: outside;
+    }
+
+    .why-choose-us-content li {
+        font-size: 14px;
+        padding: 0px 0px 5px;
+    }
+
+    .why-choose-us-content li span {
+        padding-right: 5px;
+
+    }
+
+    .why-choose-us-content ul li img {
+        height: auto;
+        width: 14px;
+        transform: translate(-20px, 0px);
+    }
+
+    .visionary-main {
+        padding: 8px 0px;
+    }
+
+    .visionary-cards {
+        margin-bottom: 30px;
+       
+            display: flex !important;
+            flex-direction: column;
+            gap: 20px;
+    
+    }
+
+    .visionaries {
+        margin-bottom: 30px;
+    }
+
+    .visionaries h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .visionaries p {
+        padding: 0px 0px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .visionary-cards {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    /* .shared-vision h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .shared-vision p {
+        letter-spacing: 1px;
+    } */
+
+
+    .shared-vision {
+        margin-top: 50px;
+        letter-spacing: 1px;
+        font-family: "Dosis", sans-serif;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        background-color: #13cead;
+        box-shadow: 8px 8px #3d3ab1;
+        padding: 10px;
+        color: white;
+        font-size: 14px;
+    }
+
+
+    /* Testimonials */
+
+    .testimonials {
+        padding: 20px 0px;
+    }
+
+    .testimonials-heading {
+        margin-bottom: 30px;
+    }
+
+
+    .testimonials-heading h3 {
+        text-align: center;
+    }
+
+    .swiper-box {
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        padding: 30px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 16px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+        flex-direction: column;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .test {
+        font-weight: 600;
+    }
+
+    .swiper-slide h5 {
+        padding: 10px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .swiper-slide p {
+        text-align: left;
+    }
+
+    .swiper-button-prev {
+        color: lightgray;
+        left: 0px !important;
+        z-index: 99;
+        display: none;
+    }
+
+    .swiper-button-next {
+        color: lightgray;
+        right: 0px !important;
+        bottom: 0 !important;
+        z-index: 99;
+        display: none;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 25px !important;
+    }
+
+
+    /* scroll logos */
+
+    .logos {
+        padding: 10px 0;
+    }
+
+
+    .logo-scroll {
+        background-color: black;
+        height: 50px;
+        color: white;
+    }
+
+
+
+    /* contact us */
+
+    .contact-us-heading {
+        margin-bottom: 20px;
+    }
+
+    .contact-us-heading h3 {
+        text-align: center;
+    }
+
+    .contact-us {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .map-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    .contact i {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+
+    .footer-info {
+        margin-top: 20px;
+        text-align: center;
+        background-color: #3d3ab1;
+        color: white;
+    }
+
+
+    /* footer {
+        height: 200px;
+        width: 100%;
+    } */
+}
